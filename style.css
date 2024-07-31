@@ -1,0 +1,96 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+h1,
+p.lead {
+    color: #ffffff;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#transcription {
+    margin-top: 20px;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+#model-loading {
+    display: none;
+}
+
+#url-input,
+#file-upload,
+#record-controls {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #21262d;
+    color: #c9d1d9;
+}
+
+.custom-file-upload:hover {
+    background-color: #30363d;
+}
+
+.btn-group .btn {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+}
+
+.btn-group .btn:hover {
+    background-color: #30363d;
+}
+
+.btn-primary {
+    background-color: #238636;
+    border: 1px solid #2ea043;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
+
+.btn-danger {
+    background-color: #d73a49;
+    border: 1px solid #e5534b;
+}
+
+.btn-danger:hover {
+    background-color: #e5534b;
+}
+
+.btn-record {
+    background-color: #f9826c;
+    border: 1px solid #ff7b72;
+}
+
+.btn-record:hover {
+    background-color: #ff7b72;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .btn-group,
+    #transcription,
+    .audio-container {
+        width: 100%;
+    }
+}

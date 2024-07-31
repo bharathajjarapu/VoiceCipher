@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceCipher</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://img.icons8.com/fluency/96/microphone.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container text-center mt-5">
+    <h1 class="display-4">Voice Cipher🎙️</h1>
+    <p class="lead">ML-powered speech recognition for Voice Transcription</p>
+    <div id="model-loading" class="alert alert-info" role="alert">
+      Loading model, please wait...
+    </div>
+    <div class="btn-group mt-3" role="group">
+      <button id="choose-url" class="btn">From URL</button>
+      <button id="choose-file" class="btn">From File</button>
+      <button id="choose-record" class="btn">Record</button>
+    </div>
+    <div id="url-input" class="mt-3">
+      <input type="text" class="form-control" id="audio-url" placeholder="Enter URL of the audio file">
+    </div>
+    <div id="file-upload" class="mt-3">
+      <label for="audio-file" class="custom-file-upload">
+        Choose File
+      </label>
+      <input type="file" id="audio-file" style="display: none;">
+    </div>
+    <div id="record-controls" class="mt-3">
+      <button id="start-record" class="btn btn-record">Start Recording</button>
+      <button id="stop-record" class="btn btn-danger">Stop Recording</button>
+    </div>
+    <div class="audio-container">
+      <audio id="audio-player" controls style="display: none;"></audio>
+    </div>
+    <button id="transcribe-btn" class="btn btn-primary mt-3" disabled>Transcribe</button>
+    <div class="mt-3">
+      <textarea id="transcription" class="form-control" rows="10"
+        placeholder="Transcription will appear here..."></textarea>
+    </div>
+  </div>
+</body>
+
+</html>
